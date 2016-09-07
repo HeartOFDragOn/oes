@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>login</title>
+  </head>
+  <body>
+    <div align="center">
+    {{error}}
+    <form action="/login" method="post">
+      {{error_msg.NAME_ERR}}
+      User Name:<input type="text" name="userName"/><br/>
+      {{error_msg.PASS_ERR}}
+      Password:<input type="password" name="password"/><br/>
+      <input type="submit" value="Submit"/>
+    </form>
+    </div>
+  </body>
+</html>
